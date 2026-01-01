@@ -1601,6 +1601,94 @@ h2 {
   font-size: 14px;
 }
 
+.api-table {
+  margin: 24px auto;
+  width: 92%;
+  max-width: 1200px;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #e5e7eb;
+
+  border-radius: 14px;
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* HEADER */
+.api-table thead th {
+  padding: 14px 18px;
+  text-align: left;
+
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+/* BODY */
+.api-table tbody td {
+  padding: 14px 18px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ROW STRIPING */
+.api-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* HOVER EFFECT */
+.api-table tbody tr:hover {
+  background: rgba(99, 102, 241, 0.15);
+  transition: background 0.3s ease;
+}
+
+/* LAST ROW BORDER FIX */
+.api-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* RESPONSIVE (MOBILE FRIENDLY) */
+@media (max-width: 768px) {
+  .api-table {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .api-table thead {
+    display: none;
+  }
+
+  .api-table tr {
+    display: block;
+    margin-bottom: 16px;
+    background: #0f172a;
+    border-radius: 10px;
+    padding: 12px;
+  }
+
+  .api-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border: none;
+  }
+
+  .api-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #a5b4fc;
+  }
+}
+
+
 /* Responsive */
 @media (max-width: 600px) {
   .ur-title h1 {
@@ -1609,14 +1697,16 @@ h2 {
   .ur-page {
     padding: 20px 14px;
   }
+  .ur-table{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .api-table{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
 
-/* ======================================================================== */
 
-
-/* useContext */
-
-/* ======================================================================== */
-
-
-/* useId */

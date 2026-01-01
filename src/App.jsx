@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Components/Header'
 import SideBar from './Components/SideBar'
@@ -24,7 +22,7 @@ import UseReducer from './Pages/UseReducer'
 import Forms from './Pages/Forms'
 import ContextAPI from './Pages/ContextAPI'
 import Footer from './Components/Footer'
-
+import { SearchProvider } from "./Components/SearchProvider";
 
 
 function App() {
@@ -41,7 +39,11 @@ function App() {
 
         <div className="app-layout">
 
-          <Header toggleSidebar={toggleSidebar}  sidebarOpen={sidebarOpen}/>
+          <SearchProvider>
+            <Header toggleSidebar={toggleSidebar}  sidebarOpen={sidebarOpen}/>
+
+          </SearchProvider>
+          
 
           <div className="content-wrapper">
 

@@ -7,6 +7,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 /* NAVBAR */
@@ -24,7 +25,7 @@
   top: 0;
   left: 0;
   right: 0;
-
+  overflow: visible;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
@@ -44,102 +45,133 @@
 }
 
 .nav-logo h2 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   white-space: nowrap;
+  padding-bottom: 20px;
+  cursor: pointer;
 }
 
 /* SEARCH */
 .search {
-  position: absolute;
-  right: 70px;
-  top: 12px;
-  background: #1e293b;
-  padding: 6px 10px;
-  border-radius: 8px;
-
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  width: 0;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-
-  transition: all 0.3s ease;
+  position: relative;
+  width: 500px;
+  transition: width 0.3s ease;
 }
 
 .search input {
   width: 100%;
+  padding: 8px 36px 8px 12px;
+  border-radius: 30px;
+  border: 1px solid coral;
+  font-size: 14px;
   background: transparent;
-  border: none;
-  outline: none;
-  color: white;
+  color: #fff;
+  padding-left: 20px;
+  font-size: 15px;
+  box-shadow: 0px 0px 20px coral;
 }
+
+input::placeholder{
+  padding: 10px 20px;
+  font-size: 15px;
+  color: coral;
+}
+
+
 
 .search i {
-  color: #94a3b8;
-}
-
-.search.open {
-  width: 400px;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* SEARCH BUTTON */
-.search-btn {
-  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
+  font-size: 18px;
 }
 
-/* MOBILE */
-@media (min-width: 769px) {
+/* SEARCH RESULTS */
+.search-results {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: 100%;
+  max-height: 260px;
+  overflow-y: auto;
+  background: linear-gradient(45deg, #41a6dd), #3770e1;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  z-index: 1100;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.search-item {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  cursor: pointer;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.search-item:hover {
+  background: #f1f5f9;
+}
+.menu-btn {
+    display: none;
+  }
+
+@media (max-width: 480px) {
+
+  /* Hide logo when search is active */
+  .navBar.search-active .nav-logo {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+    width: 0;
+    overflow: hidden;
+  }
+
+  /* Search expands & moves left */
+  .navBar.search-active .search {
+    width: 100%;
+    transform: translateX(-20px);
+  }
+
   .search {
-    position: static;
-    width: 260px;
+    width: 40px;
+  }
+
+   .search-results {
+    position: fixed;
+    top: 64px; /* navbar height */
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: calc(100vh - 64px);
+    border-radius: 0;
+  }
+
+
+  .search input {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .search.open input {
     opacity: 1;
     pointer-events: auto;
   }
 
-  .search-btn {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .search {
-    display: none;
-  }
-
-  .search-btn {
-    display: block;
-    font-size: 20px;
-    cursor: pointer;
-  }
-
-  .search.open {
-    display: flex;
-    position: absolute;
-    top: 64px;
-    right: 10px;
-    width: calc(100% - 20px);
+  .menu-btn {
+    z-index: 1200;
   }
 }
 
-/* RIGHT ACTIONS */
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
 
-/* MENU BUTTON */
-.menu-btn {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-}
 
 /* ROTATION */
 @keyframes spin {
@@ -153,12 +185,9 @@
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .search {
-    display: none;
-  }
 
   .menu-btn {
-    display: block;
+    display: flex;
   }
 
   .nav-logo h2 {
@@ -166,17 +195,12 @@
   }
 }
 
-/* GLOBAL THEME */
-body {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-body.light {
+.sidebar.light {
   background-color: #ffffff;
   color: #000;
 }
 
-body.dark {
+.sidebar.dark {
   background-color: #0f172a;
   color: #fff;
 }
@@ -230,6 +254,7 @@ body.dark {
   align-items: center;
   gap: 10px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .sidebar-logo img {
@@ -238,7 +263,9 @@ body.dark {
 
 .sidebar-logo h3 {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: bold;
+  cursor: pointer;
+  color: red;
 }
 
 .sidebar-logo span {

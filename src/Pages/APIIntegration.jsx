@@ -14,7 +14,6 @@ export default function APIIntegration() {
 
   const [posts, setPosts] = useState([]);
   const [todos, setTodos] = useState([]);
-  const [users, setUsers] = useState([]);
   const [comments, setComments] = useState([]);
   const [dynamicUsers, setDynamicUsers] = useState([]);
 
@@ -186,8 +185,11 @@ const { data } = await axios.get('https://api.example.com/data');`}
       <section className="ur-demo">
         <h3>5️⃣ Dynamic Users Table</h3>
         <button className="ur-btn" onClick={fetchUsers}>Load Users</button>
+        
+        <pre className="ur-code">
+
         {dynamicUsers.length > 0 && (
-          <table className="ur-table">
+          <table className="api-table">
             <thead>
               <tr>
                 <th>ID</th>
@@ -206,6 +208,8 @@ const { data } = await axios.get('https://api.example.com/data');`}
             </tbody>
           </table>
         )}
+        </pre>
+        
       </section>
       {/* Navigation */}
       <div className="nav-buttons">

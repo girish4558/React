@@ -1,9 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Home from "../Pages/Home";
 import { useState } from "react";
 
 export default function SideBar({ isOpen, closeSidebar }) {
   const [hooksOpen, setHooksOpen] = useState(false)
+  const Navigate = useNavigate()
   return (
     <aside className={`sidebar ${isOpen ? "open" : ""}`}>
       {/* Logo */}
@@ -11,9 +12,10 @@ export default function SideBar({ isOpen, closeSidebar }) {
         <img
           src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png"
           alt="React"
+          onClick={()=>Navigate("/")}
         />
-        <h3>
-          React Learning <span>Portal</span>
+        <h3 onClick={()=>Navigate("/")}>
+          React Learning Portal
         </h3>
       </div>
 
