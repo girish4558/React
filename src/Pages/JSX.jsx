@@ -38,7 +38,7 @@ export default function JSX() {
       <section className="jsx-section">
         <h2>Coding JSX</h2>
         <p>
-          <strong>JSX</strong> allows us to write <strong>HTML</strong> elements in <strong>JavaScript</strong> and place them in the <strong>DOM</strong> without any <code>createElement()</code> and/or <code>appendChild()</code> methods.<br /><strong>JSX</strong> converts <strong>HTML</strong> tags into react elements.
+          <strong>JSX</strong> allows us to write <strong>HTML</strong> elements in <strong>JavaScript</strong> and place them in the <strong>DOM</strong> without any <code className='cec'>createElement()</code> and/or <code className='cec'>appendChild()</code> methods.<br /><strong>JSX</strong> converts <strong>HTML</strong> tags into react elements.
         </p>
       </section>
 
@@ -100,19 +100,23 @@ export default function JSX() {
       {/* Using Braces */}
       <section>
         <h2>Using Braces {"{}"}</h2>
-        <p>Hello, React Learner 👋</p>
+        <p>Hello, React Learner 👋
 
         <pre>
           <code>{`function App() {
   return <p>Hello, React Learner 👋</p>;
 }`}</code>
+
         </pre>
+        </p>
+
       </section>
 
       {/* Conditional Rendering */}
       <section>
         <h2>Conditional Rendering</h2>
-        <p>{isLoggedIn ? "Welcome back!" : "Please login"}</p>
+        <p>{isLoggedIn ? "Welcome back!" : "Please login"}
+
 
         <pre>
           <code>{`const isLoggedIn = true;
@@ -123,20 +127,22 @@ export default function JSX() {
   <p>Please login</p>
 )}`}</code>
         </pre>
+        </p>
+
       </section>
 
       {/* JSX Inline Styles */}
       <section>
         <h2>JSX Inline Styles</h2>
-        <p style={{ color: "blue", fontSize: "18px" }}>
+        <p style={{ color: "red", fontSize: "18px" }}>
           This text is styled using JSX
-        </p>
-
         <pre>
-          <code>{`<p style={{ color: "blue", fontSize: "18px" }}>
+          <code>{`<p style={{ color: "red", fontSize: "18px" }}>
   This text is styled using JSX
 </p>`}</code>
         </pre>
+        </p>
+
       </section>
 
       {/* JSX with List */}
@@ -146,8 +152,6 @@ export default function JSX() {
           {fruits.map((fruit, index) => (
             <li key={index}>{fruit}</li>
           ))}
-        </ul>
-
         <pre>
           <code>{`const fruits = ["Apple", "Banana", "Orange"];
 
@@ -157,6 +161,8 @@ export default function JSX() {
   ))}
 </ul>`}</code>
         </pre>
+        </ul>
+
       </section>
     </div>
       </section>

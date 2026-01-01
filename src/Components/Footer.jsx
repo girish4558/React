@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer">
       <p>
         &copy; {new Date().getFullYear()} Developed by
-        <span className="footer-name"> Gireesh kumar</span>
+        <span className="footer-name"> Gireesh Kumar</span>
       </p>
     </footer>
   )

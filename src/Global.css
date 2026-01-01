@@ -543,16 +543,25 @@ section{
 }
 
 code {
-  background: #0f172a;
-  color: #e5e7eb;
-  padding: 16px;
-  border-radius: 12px;
-  overflow-x: auto;
-  margin-top: 16px;
+  background: #eaedf0;
+  color: #0f172a;
+  padding: 4px 8px;
+  border-radius: 6px;
   font-size: 14px;
-  width: 700px;
-  margin: 30px auto;
+  font-family: monospace;
+  width: 100%;
   
+}
+
+.jsx-section p .cec{
+  color: #181818;
+  font-weight: 500;
+  background-color: #edd3d3;
+}
+
+.jsx-section p code{
+  color: #fff;
+  font-weight: 500;
 }
 
 
@@ -646,7 +655,8 @@ code {
 /* Mobile */
 @media (max-width: 768px) {
   .jsx-page {
-    padding: 16px;
+    padding: 5px;
+    margin: 0;
   }
 
   .nav-buttons {
@@ -742,6 +752,11 @@ h2 {
   margin-left: 30px;
 }
 
+.cmp-text code{
+  color: #0f172a;
+  background-color: #c98cec;
+}
+
 .cmp-list {
   padding-left: 36px;
   margin-top: 10px;
@@ -760,8 +775,6 @@ h2 {
   overflow-x: auto;
   margin-top: 16px;
   font-size: 14px;
-  width: 700px;
-  margin: 30px auto;
 }
 
 .cmp-tags {

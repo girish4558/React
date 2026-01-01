@@ -30,18 +30,28 @@ export default function Components() {
               <p className="cmp-text">
                 Functional components are function-based components that return JSX.
                 They are the most commonly used components in modern React.
-              </p>
-
-              <pre className="cmp-code">
+              
+                <pre className="cmp-code">
           {`function Welcome() {
             return <h1>Hello React</h1>;
           }`}
               </pre>
+              </p>
+
+              
 
               <h3 className="cmp-subheading">🔹 Class Components</h3>
               <p className="cmp-text">
                 Class components are an older approach and use the <code>render()</code>{" "}
                 method. Today, functional components are preferred.
+
+                <pre className="cmp-code">
+{`class Welcome extends React.Component {
+  render() {
+    return <h1>Hello React</h1>;
+  }
+}`}
+</pre>
               </p>
             </section>
 
@@ -52,11 +62,13 @@ export default function Components() {
                 <li>Use PascalCase for file names (Example: Header.jsx)</li>
                 <li>Export the component as default</li>
                 <li>Import and use it inside another component</li>
-              </ul>
-
+              
               <pre className="cmp-code">
           {`import Header from "./Header";`}
               </pre>
+              </ul>
+
+              
             </section>
 
             {/* 4. Reusability */}
@@ -64,12 +76,12 @@ export default function Components() {
               <h2 className="cmp-heading">Component Reusability</h2>
               <p className="cmp-text">
                 One component can be reused multiple times with different data.
+                    <pre className="cmp-code">
+                {`<Card title="Learn React" />
+<Card title="Practice React" />`}
+                    </pre>
               </p>
 
-              <pre className="cmp-code">
-          {`<Card title="Learn React" />
-          <Card title="Practice React" />`}
-              </pre>
             </section>
 
             {/* 5. Structure */}
@@ -79,14 +91,14 @@ export default function Components() {
                 <li>One component = one responsibility</li>
                 <li>Small and readable components</li>
                 <li>Organized folder structure</li>
-              </ul>
-
               <pre className="cmp-code">
           {`components/
           ├── Header.jsx
           ├── Sidebar.jsx
           ├── Card.jsx`}
               </pre>
+              </ul>
+
             </section>
 
             {/* 6. Props */}
@@ -94,13 +106,13 @@ export default function Components() {
               <h2 className="cmp-heading">Props in Components (Intro)</h2>
               <p className="cmp-text">
                 Props allow components to receive data and are read-only.
-              </p>
-
               <pre className="cmp-code">
           {`function Card({ title }) {
             return <h3>{title}</h3>;
           }`}
               </pre>
+              </p>
+
             </section>
 
             {/* 7. Composition */}
@@ -108,13 +120,13 @@ export default function Components() {
               <h2 className="cmp-heading">Component Composition</h2>
               <p className="cmp-text">
                 Components can contain other components using <strong>children</strong>.
-              </p>
-
               <pre className="cmp-code">
           {`<Card>
             <p>React makes UI easy</p>
           </Card>`}
               </pre>
+              </p>
+
             </section>
 
             {/* 8. Conditional */}
@@ -122,11 +134,11 @@ export default function Components() {
               <h2 className="cmp-heading">Conditional Components</h2>
               <p className="cmp-text">
                 Components can be rendered conditionally.
-              </p>
-
               <pre className="cmp-code">
           {`{isLoggedIn && <Dashboard />}`}
               </pre>
+              </p>
+
             </section>
 
             {/* 9. When to Create */}
