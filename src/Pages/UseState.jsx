@@ -12,7 +12,7 @@ export default function UseState() {
   const Navigate = useNavigate()
 
   function MovePrev(){
-    Navigate('/props')
+    Navigate('/conditional-Rendaring')
   }
 
   function MoveNext(){

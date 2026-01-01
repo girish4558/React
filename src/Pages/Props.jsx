@@ -10,7 +10,7 @@ export default function Props() {
   }
 
   function MoveNext(){
-    Navigate('/hooks/use-state')
+    Navigate('/conditional-Rendaring')
   }
 
 

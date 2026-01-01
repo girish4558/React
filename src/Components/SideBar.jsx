@@ -44,6 +44,11 @@ export default function SideBar({ isOpen, closeSidebar }) {
           Props
         </NavLink>
 
+        <NavLink to="/conditional-Rendaring" onClick={closeSidebar}>
+          <i className="bi bi-diagram-3"></i>
+          Conditional Rendering
+        </NavLink>
+
         {/* HOOKS PARENT */}
           <div
             className="menu-parent"
@@ -64,11 +69,11 @@ export default function SideBar({ isOpen, closeSidebar }) {
               <NavLink to="/hooks/use-effect" onClick={closeSidebar}>
                 <i className="bi bi-lightning"></i> useEffect
               </NavLink>
-              <NavLink to="/hooks/use-ref" onClick={closeSidebar}>
-                <i className="bi bi-lightning"></i> useRef
-              </NavLink>
               <NavLink to="/hooks/use-context" onClick={closeSidebar}>
                 <i className="bi bi-lightning"></i> useContext
+              </NavLink>
+              <NavLink to="/hooks/use-ref" onClick={closeSidebar}>
+                <i className="bi bi-lightning"></i> useRef
               </NavLink>
               <NavLink to="/hooks/use-reducer" onClick={closeSidebar}>
                 <i className="bi bi-lightning"></i> useReducer
@@ -79,19 +84,17 @@ export default function SideBar({ isOpen, closeSidebar }) {
             </div>
           )}
 
-        <NavLink to="/forms" onClick={closeSidebar}>
-          <i className="bi bi-ui-checks"></i>
-          Forms
-        </NavLink>
+        
 
         <NavLink to="/lists" onClick={closeSidebar}>
           <i className="bi bi-list-ul"></i>
           Lists & Keys
         </NavLink>
 
-        <NavLink to="/conditional-Rendaring" onClick={closeSidebar}>
-          <i className="bi bi-diagram-3"></i>
-          Conditional Rendering
+
+        <NavLink to="/forms" onClick={closeSidebar}>
+          <i className="bi bi-ui-checks"></i>
+          Forms
         </NavLink>
 
         <NavLink to="/routings" onClick={closeSidebar}>
