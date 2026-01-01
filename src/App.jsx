@@ -15,7 +15,6 @@ import JSX from './Pages/JSX'
 import ListsKeys from './Pages/ListsKeys'
 import Props from './Pages/Props'
 import Routing from './Pages/Routing'
-import Styling from './Pages/Styling'
 import UseContext from './Pages/UseContext'
 import UseEffect from './Pages/UseEffect'
 import UseId from './Pages/UseId'
@@ -77,7 +76,6 @@ function App() {
                           <Route path="/Custom-hooks" element={<CustomHooks/>} />
                           <Route path="/API-Integration" element={<APIIntegration/>} />
                           <Route path="/routings" element={<Routing/>} />
-                          <Route path="/stylings" element={<Styling/>} />
 
                         </Routes>
                       </div>

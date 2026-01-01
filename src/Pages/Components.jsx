@@ -15,10 +15,12 @@ export default function Components() {
 
   return (
         <div className="cmp-page">
-            <h1 className="cmp-title">React Components</h1>
-            <p className="cmp-subtitle">
+            <div className="cmp-title">
+                <h1><i className="bi bi-box"></i> React Components</h1>
+            <p>
               Learn how components help you build reusable, scalable user interfaces
             </p>
+            </div>
 
             {/* 1. What is a Component */}
             <section className="cmp-section">

@@ -43,10 +43,6 @@ export default function SideBar({ isOpen, closeSidebar }) {
           <i className="bi bi-arrow-left-right"></i>
           Props
         </NavLink>
-        <NavLink to="/stylings" onClick={closeSidebar}>
-          <i className="bi bi-border-style"></i>
-          Stylings
-        </NavLink>
 
         {/* HOOKS PARENT */}
           <div

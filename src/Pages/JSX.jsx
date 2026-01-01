@@ -19,10 +19,12 @@ export default function JSX() {
   return (
     <div className="jsx-page">
       {/* Title */}
-      <h1 className="page-title">React JSX</h1>
-      <p className="page-subtitle">
+      <div className="jsx-title">
+        <h1><i className="bi bi-code-slash"></i> React JSX</h1>
+      <p>
         Learn how JSX makes writing React UI simple and powerful.
       </p>
+      </div>
 
       {/* What is JSX */}
       <section className="jsx-section">

@@ -5,6 +5,8 @@
   margin: 0;
 }
 
+
+
 .home-hero{
     width: calc(100%-280px);
     padding: 10px 100px;
@@ -262,6 +264,12 @@ section{
   padding: 20px;
 }
 
+.react-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
 /* HERO */
 .react-hero {
   text-align: center;
@@ -498,32 +506,44 @@ section{
 .jsx-page {
   max-width: 1100px;
   margin: auto;
+  padding: 25px;
+}
+
+.jsx-page {
+  max-width: 900px;
+  margin: auto;
   padding: 24px;
 }
 
 /* Titles */
-.page-title {
-  font-size: 40px;
-  font-weight: 800;
+.jsx-title {
   text-align: center;
-  background: linear-gradient(90deg, #22c55e, #16a34a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+
+  background: linear-gradient(135deg, #61dafb, #2563eb);
+  color: #fff;
+  border-radius: 20px;
 }
 
-.page-subtitle {
-  color: #1d635d;
-  margin-bottom: 30px;
-  text-align: center;
+.jsx-title h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.jsx-title p {
+  font-size: 18px;
+  opacity: 0.9;
 }
 
 /* Sections */
 .jsx-section {
   background: #ffffff;
-  padding: 28px;
+  padding: 20px;
   border-radius: 16px;
   margin-bottom: 32px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  
 }
 
 .jsx-section h2 {
@@ -576,7 +596,7 @@ code {
 }
 
 .jsx-section {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .jsx-section:hover {
@@ -655,7 +675,7 @@ code {
 /* Mobile */
 @media (max-width: 768px) {
   .jsx-page {
-    padding: 5px;
+    padding: 10px;
     margin: 0;
   }
 
@@ -669,11 +689,7 @@ code {
   }
 }
 
-.jsx-page {
-  max-width: 900px;
-  margin: auto;
-  padding: 24px;
-}
+
 
 section {
   margin-bottom: 40px;
@@ -705,22 +721,35 @@ h2 {
 /* Components Page */
 
 .cmp-page {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
-  padding: 40px 20px;
-  color: #1e293b;
+  padding: 25px;
+}
+
+.cmp-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 24px;
 }
 
 .cmp-title {
-  font-size: 42px;
   text-align: center;
-  color: #76e01a;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+
+  background: linear-gradient(135deg, #61dafb, #2563eb);
+  color: #fff;
+  border-radius: 20px;
 }
 
-.cmp-subtitle {
-  text-align: center;
-  color: #475569;
-  margin-bottom: 40px;
+.cmp-title h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.cmp-title p {
+  font-size: 18px;
+  opacity: 0.9;
 }
 
 .cmp-section {
@@ -731,6 +760,15 @@ h2 {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
+.cmp-section{
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cmp-section:hover{
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+}
 .cmp-heading {
   color: #2563eb;
   margin-bottom: 12px;
@@ -785,13 +823,18 @@ h2 {
 }
 
 .cmp-tags span {
-  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  background: linear-gradient(135deg, #82e273, #147105);
   color: #fff;
   padding: 8px 16px;
   border-radius: 999px;
   font-size: 14px;
   width: 50px;
   margin-left: 40px;
+  font-weight: bold;
+}
+
+.cmp-tags span:hover{
+  box-shadow: 0px 0px 20px #2047c8;
 }
 
 /* Responsive */
@@ -803,4 +846,323 @@ h2 {
   .cmp-section {
     padding: 20px;
   }
+  .cmp-page{
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+
+/* ======================================================================== */
+
+
+/* Props Page */
+
+.props-page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 25px;
+}
+
+.props-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 24px;
+}
+
+/* Title */
+.props-title {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+
+  background: linear-gradient(135deg, #61dafb, #2563eb);
+  color: #fff;
+  border-radius: 20px;
+}
+
+.props-title h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.props-title p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.props-section {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.props-section{
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.props-section:hover{
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+}
+
+.props-section h2 {
+  color: #2563eb;
+  margin-bottom: 12px;
+  padding-left: 10px ;
+  border-left: 5px solid #2cd42c ;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.props-section p {
+  line-height: 1.7;
+  color: #334155;
+  margin-left: 40px;
+}
+
+.props-section ul {
+  margin-left: 40px;
+  padding-left: 20px;
+}
+
+.props-code {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 16px;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-left: 30px;
+}
+
+.props-compare {
+  display: flex;
+  gap: 20px;
+}
+
+.props-compare div {
+  flex: 1;
+  background: #f1f5f9;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.props-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.props-tags span {
+  background: linear-gradient(135deg, #d0f24b, #31e063);
+  color: #530481;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 15px;
+  width: 90px;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.props-tags span:hover{
+  box-shadow: 0px 0px 20px #2047c8;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .props-title {
+    font-size: 32px;
+  }
+
+  .props-page {
+    padding: 20px 14px;
+  }
+
+  .props-section {
+    padding: 20px;
+  }
+
+  .props-compare {
+    flex-direction: column;
+  }
+}
+
+
+
+/* ======================================================================== */
+
+
+/* HOOKs */
+
+/* useState */
+
+
+.us-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 32px 20px;
+}
+
+/* Title */
+.us-title {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+
+  background: linear-gradient(135deg, #61dafb, #2563eb);
+  color: #fff;
+  border-radius: 20px;
+}
+
+.us-title h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.us-title p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.us-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.us-card p{
+  margin-left: 40px;
+  font-size: 17px;
+}
+
+.us-card ul{
+  margin-left: 60px;
+
+}
+
+.use-card{
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+}
+
+.us-card:hover{
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+}
+
+.us-card h2 {
+  color: #0f172a;
+  margin-bottom: 12px;
+  border-left: 5px solid #2cd42c;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 10px;
+}
+
+.us-demo-title {
+  margin: 40px 0 20px;
+  font-size: 28px;
+  color: #2563eb;
+  text-align: center;
+}
+
+.us-demo {
+  background: #f8fafc;
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  border-left: 6px solid #3b82f6;
+}
+
+.us-demo h3{
+  text-align: center;
+  font-size: 25px;
+}
+
+.us-btn {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: #fff;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 20px 50px;
+}
+
+.us-btn:hover{
+  box-shadow: 0px 0px 20px #31e063;
+}
+
+.us-demo ul{
+  margin-left: 70px;
+}
+
+.us-demo ul li{
+  color: #ef1515;
+  font-size: 18px;
+}
+.us-input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cbd5f5;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px 80px;
+}
+
+.us-demo p{
+  margin-left: 100px;
+}
+
+.us-code {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 16px;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-size: 14px;
+  margin-top: 14px;
+  margin-left: 30px;
+}
+
+/* Theme demo */
+.theme-dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .us-title {
+    font-size: 32px;
+  }
+
+  .us-page {
+    padding: 20px 12px;
+  }
+
+  .us-demo {
+    padding: 16px;
+  }
+
+  .us-btn{
+    margin:30px 70px;
+  }
+  .us-demo input{
+    margin-left: 30px;
+
+  }
+  .us-demo p{
+  margin-left: 30px;
+}
 }
