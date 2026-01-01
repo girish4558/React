@@ -1,6 +1,18 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function Components() {
+
+  const Navigate = useNavigate()
+
+  function MovePrev(){
+    Navigate('/jsx')
+  }
+
+  function MoveNext(){
+    Navigate('/props')
+  }
+
   return (
         <div className="cmp-page">
             <h1 className="cmp-title">React Components</h1>
@@ -31,12 +43,12 @@ export default function Components() {
                 Functional components are function-based components that return JSX.
                 They are the most commonly used components in modern React.
               
+              </p>
                 <pre className="cmp-code">
           {`function Welcome() {
             return <h1>Hello React</h1>;
           }`}
               </pre>
-              </p>
 
               
 
@@ -45,6 +57,7 @@ export default function Components() {
                 Class components are an older approach and use the <code>render()</code>{" "}
                 method. Today, functional components are preferred.
 
+              </p>
                 <pre className="cmp-code">
 {`class Welcome extends React.Component {
   render() {
@@ -52,7 +65,6 @@ export default function Components() {
   }
 }`}
 </pre>
-              </p>
             </section>
 
             {/* 3. Creating a Component */}
@@ -76,11 +88,11 @@ export default function Components() {
               <h2 className="cmp-heading">Component Reusability</h2>
               <p className="cmp-text">
                 One component can be reused multiple times with different data.
+              </p>
                     <pre className="cmp-code">
                 {`<Card title="Learn React" />
 <Card title="Practice React" />`}
                     </pre>
-              </p>
 
             </section>
 
@@ -106,12 +118,12 @@ export default function Components() {
               <h2 className="cmp-heading">Props in Components (Intro)</h2>
               <p className="cmp-text">
                 Props allow components to receive data and are read-only.
+              </p>
               <pre className="cmp-code">
           {`function Card({ title }) {
             return <h3>{title}</h3>;
           }`}
               </pre>
-              </p>
 
             </section>
 
@@ -120,12 +132,12 @@ export default function Components() {
               <h2 className="cmp-heading">Component Composition</h2>
               <p className="cmp-text">
                 Components can contain other components using <strong>children</strong>.
+              </p>
               <pre className="cmp-code">
           {`<Card>
-            <p>React makes UI easy</p>
-          </Card>`}
+    <p>React makes UI easy</p>
+</Card>`}
               </pre>
-              </p>
 
             </section>
 
@@ -134,10 +146,10 @@ export default function Components() {
               <h2 className="cmp-heading">Conditional Components</h2>
               <p className="cmp-text">
                 Components can be rendered conditionally.
+              </p>
               <pre className="cmp-code">
           {`{isLoggedIn && <Dashboard />}`}
               </pre>
-              </p>
 
             </section>
 
@@ -163,6 +175,12 @@ export default function Components() {
                 <span>Button</span>
               </div>
             </section>
+
+            {/* Navigation */}
+            <div className="nav-buttons">
+              <button className="nav-btn prev" onClick={MovePrev}>← Previous</button>
+              <button className="nav-btn next" onClick={MoveNext}>Next →</button>
+            </div>
           </div>
 
   )

@@ -779,8 +779,9 @@ h2 {
 
 .cmp-tags {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 12px;
+  margin: 10px auto;
 }
 
 .cmp-tags span {
@@ -789,6 +790,8 @@ h2 {
   padding: 8px 16px;
   border-radius: 999px;
   font-size: 14px;
+  width: 50px;
+  margin-left: 40px;
 }
 
 /* Responsive */

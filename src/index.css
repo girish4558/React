@@ -389,7 +389,7 @@ body.light .footer-name {
   color: #0284c7;
 }
 
-@media (max-width : 433px){
+@media (max-width : 712px){
   .footer p{
     margin: auto;
   }

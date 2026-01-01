@@ -102,13 +102,13 @@ export default function JSX() {
         <h2>Using Braces {"{}"}</h2>
         <p>Hello, React Learner 👋
 
+        </p>
         <pre>
           <code>{`function App() {
   return <p>Hello, React Learner 👋</p>;
 }`}</code>
 
         </pre>
-        </p>
 
       </section>
 
@@ -118,6 +118,7 @@ export default function JSX() {
         <p>{isLoggedIn ? "Welcome back!" : "Please login"}
 
 
+        </p>
         <pre>
           <code>{`const isLoggedIn = true;
 
@@ -127,7 +128,6 @@ export default function JSX() {
   <p>Please login</p>
 )}`}</code>
         </pre>
-        </p>
 
       </section>
 
@@ -136,12 +136,12 @@ export default function JSX() {
         <h2>JSX Inline Styles</h2>
         <p style={{ color: "red", fontSize: "18px" }}>
           This text is styled using JSX
+        </p>
         <pre>
           <code>{`<p style={{ color: "red", fontSize: "18px" }}>
   This text is styled using JSX
 </p>`}</code>
         </pre>
-        </p>
 
       </section>
 
@@ -152,6 +152,7 @@ export default function JSX() {
           {fruits.map((fruit, index) => (
             <li key={index}>{fruit}</li>
           ))}
+        </ul>
         <pre>
           <code>{`const fruits = ["Apple", "Banana", "Orange"];
 
@@ -161,7 +162,6 @@ export default function JSX() {
   ))}
 </ul>`}</code>
         </pre>
-        </ul>
 
       </section>
     </div>
