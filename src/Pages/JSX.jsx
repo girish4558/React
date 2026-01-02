@@ -114,7 +114,7 @@ export default function JSX() {
 
       </section>
 
-      {/* Conditional Rendering */}
+      {/* Conditional Rendaring */}
       <section>
         <h2>Conditional Rendering</h2>
         <p>{isLoggedIn ? "Welcome back!" : "Please login"}
