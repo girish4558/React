@@ -46,7 +46,7 @@ export default function SideBar({ isOpen, closeSidebar }) {
           Props
         </NavLink>
 
-        <NavLink to="/conditional-Rendaring" onClick={closeSidebar}>
+        <NavLink to="/conditional-rendaring" onClick={closeSidebar}>
           <i className="bi bi-diagram-3"></i>
           Conditional Rendering
         </NavLink>
@@ -104,17 +104,17 @@ export default function SideBar({ isOpen, closeSidebar }) {
           Routings
         </NavLink>
 
-        <NavLink to="/context-API" onClick={closeSidebar}>
+        <NavLink to="/context-api" onClick={closeSidebar}>
           <i className="bi bi-diagram-2"></i>
           Context API
         </NavLink>
 
-        <NavLink to="/Custom-hooks" onClick={closeSidebar}>
+        <NavLink to="/custom-hooks" onClick={closeSidebar}>
           <i className="bi bi-tools"></i>
           Custom Hooks
         </NavLink>
 
-        <NavLink to="/API-Integration" onClick={closeSidebar}>
+        <NavLink to="/api-integration" onClick={closeSidebar}>
           <i className="bi bi-cloud-arrow-down"></i>
           API Integration
         </NavLink>

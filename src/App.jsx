@@ -73,10 +73,10 @@ function App() {
                           
                           <Route path="/forms" element={<Forms />} />
                           <Route path="/lists" element={<ListsKeys />} />
-                          <Route path="/conditional-Rendaring" element={<ConditionalRendering />} />
-                          <Route path="/context-API" element={<ContextAPI/>} />
-                          <Route path="/Custom-hooks" element={<CustomHooks/>} />
-                          <Route path="/API-Integration" element={<APIIntegration/>} />
+                          <Route path="/conditional-rendaring" element={<ConditionalRendering />} />
+                          <Route path="/context-api" element={<ContextAPI/>} />
+                          <Route path="/custom-hooks" element={<CustomHooks/>} />
+                          <Route path="/api-integration" element={<APIIntegration/>} />
                           <Route path="/routings" element={<Routing/>} />
 
                         </Routes>
