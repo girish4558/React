@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useSiteContent } from "./SearchProvider";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
+
 
 export default function Header({ sidebarOpen, toggleSidebar }) {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -34,6 +35,10 @@ export default function Header({ sidebarOpen, toggleSidebar }) {
           <img src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png" alt="React" onClick={()=>Navigate("/")}/>
           <h2 onClick={()=>Navigate("/")}>React Learning Portal</h2>
         </div>
+
+        <div className="nav-links">
+          <NavLink to="/about" className="nav-link">About</NavLink>
+         </div>
 
         <div className={`search ${searchOpen ? "open" : ""}`} ref={searchRef}>
           <input

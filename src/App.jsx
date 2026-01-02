@@ -23,6 +23,7 @@ import Forms from './Pages/Forms'
 import ContextAPI from './Pages/ContextAPI'
 import Footer from './Components/Footer'
 import { SearchProvider } from "./Components/SearchProvider";
+import About from './Pages/About'
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
               <main className="main-content">
                       <div className="page-content">
                         <Routes>
+                          <Route path='/about' element={<About/>}/>
                           <Route path="/" element={<Home/>} />
                           <Route path="/react" element={<ReactBasics/>} />
                           <Route path="/components" element={<Components/>} />
