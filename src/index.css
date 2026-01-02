@@ -507,6 +507,7 @@ body.dark .bi-search:hover {
     display: none;
   }
 
+
   /* Hide logo when search is active */
   .navBar.search-active .nav-logo {
     opacity: 0;
@@ -515,6 +516,15 @@ body.dark .bi-search:hover {
     width: 0;
     overflow: hidden;
   }
+
+  /* Hide nav-link when search is active */
+  .navBar.search-active .nav-links {
+  opacity: 0;
+  transform: translateX(-10px);
+  pointer-events: none;
+  width: 0;
+  overflow: hidden;
+}
 
   /* Search expands & moves left */
   .navBar.search-active .search {
