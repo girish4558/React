@@ -19,7 +19,7 @@ export default function About() {
           <div className="about-card">
             <h3>🎯 Purpose</h3>
             <p>
-              This project was built as part of a React training program to
+              This project was built to
               practice real-world React development using modern best practices.
             </p>
           </div>

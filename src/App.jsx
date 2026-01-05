@@ -23,7 +23,7 @@ import Forms from './Pages/Forms'
 import ContextAPI from './Pages/ContextAPI'
 import Footer from './Components/Footer'
 import { SearchProvider } from "./Components/SearchProvider";
-import About from './Pages/About'
+import About from './Components/About'
 
 
 function App() {
